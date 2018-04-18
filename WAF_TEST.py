@@ -53,15 +53,15 @@ class Example(wx.Frame):
 
         menubar.Append(fileMenu, '&File')
         menubar.Append(viewMenu, '&Help')
-        description = u"이 툴은 WEBFRONT-K 신규 PLOS 안정성 및 보안기능을 좀 더 빠르고 효율적으로 하기 위해 만들어졌습니다.\n\n                     <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+        description = u"이 툴은 보안제품의 안정성 및 보안기능을 좀 더 빠르고 효율적으로 하기 위해 만들어졌습니다.\n\n                     <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 < TOOL기능 설명 >\n 1. HTTP URL 및 Parameter 요청(GET/POST)\n 2. HTTPS(SSL) URL 및 Parameter 요청(GET/POST)\n 3. 요청검사 공격 기능(SQL/XSS/접근제어/쉘코드/요청형식검사 등)\n 4. 고급첨부파일 기능 검증(반드시 파일 이름을 waf_test.확장자명(ex: waf_test.doc , waf_test.xls)을 사용하셔야 합니다)\n 5. 각 요청에 대한 응답시간 및 서버 응답 코드 확인\n 6. 기타설정(윈도우스케일/쿠키매개변수 검사)\n\n 테스트 결과 자료는 C드라이브에 WEBFRONT-K_test_Rerult.txt 파일로 저장 됩니다.\n\n기능에 대한 문의 사항이나 해당 툴 개선에 대한 의견이 있으신 경우에는 mk.choi@piolink.com으로 메일 부탁드립니다.\n\n                                                                              감사합니다."
 
         self.about = wx.AboutDialogInfo()
         self.about.SetIcon(wx.Icon('test_icon.ico',wx.BITMAP_TYPE_ICO))
-        self.about.SetName("WEBFRONT-K PLOS TEST TOOL")
+        self.about.SetName("Web Security Test Tool")
         self.about.SetVersion("1.1")
         self.about.SetDescription(description)
-        self.about.SetCopyright('(C) 2015 Choi, Mankyun(mk.choi@piolink.com)')
+        self.about.SetCopyright('(C) 2015-2018 Choi, Mankyun(ferozah83@gmail.com)')
 
 
         self.SetMenuBar(menubar)
